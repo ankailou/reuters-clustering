@@ -73,12 +73,8 @@ The `clustering.py` file will produce the following 2x2x2 experiment results:
 
 * k-means using euclidean distance on the standard feature vector
 * k-means using euclidean distance on the pared feature vector
-* k-means using cosine distance on the standard feature vector
-* k-means using cosine distance on the pared feature vector
 * DBScan using euclidean distance on the standard feature vector
 * DBScan using euclidean distance on the pared feature vector
-* DBScan using cosine distance on the standard feature vector
-* DBScane using cosine distance on the pared feature vector
 
 
 For more information on how these classifiers were implemented and the offline/online costs, use the command:
@@ -183,7 +179,7 @@ Once `preprocessing.py` finishes execution, two datasets files are generated (`d
 
 where `X` is replaced with 1 or 2 depending on the dataset.
 
-Once `classification.py` finishes execution, the results of the 2x2 experiments will be outputted to the terminal.
+Once `clustering.py` finishes execution, the results of the 2x2 experiments will be outputted to the terminal.
 
 ## Development
 * This module was developed using python 2.7.10 using the NLTK and BeautifulSoup4 modules.
@@ -201,7 +197,16 @@ Once `classification.py` finishes execution, the results of the 2x2 experiments 
 * Ankai Lou (lou.56@osu.edu)
 
 ## Change Log
-2015-09-10 - Version 1.0.0:
+2015-10-28 - Version 1.0.2:
+* Added functionality for k-means clustering
+* Added functionality for dcscan clustering
+* Added functionality to compute cluster entropy
+* Added functionality to compute cluster variance
+* Basic code requirements fulfilled
+* TODO: clean up code + make it faster & more modular
+* TODO: write report in latex
+
+2015-10-28 - Version 1.0.0:
 
 * Initial code import
 * Added functionality to generate parse tree
